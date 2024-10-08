@@ -25,6 +25,7 @@ void main() {
     printf("Soy el proceso hijo ... \n");	  
     printf("Voy a dormir 30 segundos ... \n");	  
     sleep(30); 
+    printf("Proceso hijo termina \n");	
   }
   else    //Nos encontramos en Proceso padre 
   { 
