@@ -29,7 +29,6 @@ void main(){
      
      {
                 close(fd[1]); // Cierra el descriptor de lectura
-                wait(NULL);
                 printf("El padre lee el PIPE\n");
                 read(fd[0],buffer, 10);  
                 printf("\t Mensaje leído del pipe: %s \n", buffer);
