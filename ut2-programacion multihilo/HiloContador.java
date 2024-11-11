@@ -47,18 +47,7 @@ public class HiloContador implements Runnable {
         t3.start();
         t4.start();
         
-	/*
-        //Esperamos a que acaben los hilos
-        try {
-            t1.join();
-            t2.join();
-            t3.join();
-            t4.join();
-        } catch (InterruptedException ex) {
-            ex.printStackTrace();
-        }
- 	*/
-        
+	       
         //Fin
         System.out.println("Fin del programa");
  
