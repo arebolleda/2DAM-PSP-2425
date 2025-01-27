@@ -9,7 +9,7 @@ public class TCPServerSocket2 {
 	System.out.println("Esperando al cliente.....");
 	clienteConectado = servidor.accept();
 
-	// Creación flujo de entrada del cliente
+	// Creación flujo de entrada del cliente -> permite recuperar los mensajes que el cliente escribe en el socket
 	InputStream entrada = null;
 	entrada = clienteConectado.getInputStream();
 	DataInputStream flujoEntrada = new DataInputStream(entrada);
@@ -17,7 +17,7 @@ public class TCPServerSocket2 {
 	//Recibiendo datos del cliente ...
 	System.out.println("Recibiendo del CLIENTE: \n\t" + flujoEntrada.readUTF());
 
-	// Creación flujo de entrada del cliente
+	// Creación flujo de salida hacia cliente -> permite escribir mensajes queremos cliente reciba
 	OutputStream salida = null;
 	salida = clienteConectado.getOutputStream();
 	DataOutputStream flujoSalida = new DataOutputStream(salida);
